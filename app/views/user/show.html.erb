@@ -1,11 +1,18 @@
 <div class="container">
   <div class="row">
+  <div class="jumbotron">
+  <h1 class="eventname">
+    <%= @event_name %>
+  </h1>
+  <h2 class="hashtag"> #<%= @query %></h2>
 
-<h1>User Show Results</h1>
-<div class="well">
-<% @tags.each do |item| %>
-  <%= image_tag item['images']['low_resolution']['url'] %>
-<% end %>
-</div>
+
+  </div>
+
+    <div class="well">
+      <% @tags.each do |item| %>
+        <%= image_tag item['images']['low_resolution']['url'] %>
+      <% end %>
+    </div>
   </div>
 </div>

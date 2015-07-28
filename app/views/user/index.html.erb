@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="jumbotron">
-  <h1>Welcome, <%=  @username.username %>!</h1>
-  <%=@username.['profile_picture']['url'] %>
+  <h1>Welcome, <%=  @current_user.username %>!</h1>
+
 
 
     </div>
@@ -23,6 +23,7 @@
 
 
           <%= bootstrap_form_tag url: show_path do |f| %>
+          <%= f.text_field :event, label: "Name your event", placeholder: "Martin Hopkins Wedding"%>
           <%= f.text_field :q, label: "Search a hashtag below", placeholder: "example - Usher" %>
           <%= f.primary "Search", :class => "btn btn-success" %>
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -35,6 +36,9 @@
 
 <div class="dashed">
   <h2>You have no events</h2>
+  <% @events.each do |e| %>
+    <%= e.hashtag %>
+  <% end %>
 <div class="addbutton"
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-success btn-lg glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal">

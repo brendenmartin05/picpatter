@@ -9,18 +9,10 @@ require 'json'
 
 CALLBACK_URL = "http://localhost:3000/oauth/callback"
 
-# Instagram.configure do |config|
-#   config.client_id ="a8d670bb7af0451490579c40b3db0b5e"
-#   config.client_secret ="28685ff4bc294b7ea30cf1d60571654b"
-#   # For secured endpoints only
-#   #config.client_ips = '<Comma separated list of IPs>'
-# end
-
-
 def connect
   redirect_to Instagram.authorize_url(:redirect_uri => CALLBACK_URL)
   puts ENV["CLIENT_ID"]
-  puts "hello"
+
 end
 
 
