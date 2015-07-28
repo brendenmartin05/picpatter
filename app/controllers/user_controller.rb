@@ -12,6 +12,10 @@ class UserController < ApplicationController
     @username = @current_user
 
 
+    # responsepic = RestClient.get 'https://api.instagram.com/v1/users/' + @current_user + '/?access_token'+ ENV['ACCESS_TOKEN']
+    # @pro = JSON.parse(responsepic)
+
+
  end
 
  def show
@@ -25,6 +29,8 @@ class UserController < ApplicationController
 
     # render json: response
     @tags = JSON.parse(response)["data"]
+
+
     # render @tags
   end
   # render jason: params

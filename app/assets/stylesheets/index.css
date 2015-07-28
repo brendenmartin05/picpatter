@@ -46,6 +46,7 @@ h1 {
 
 .btn a {
   color: white;
+
 }
 
 
@@ -55,6 +56,13 @@ h1 {
   margin: 0 auto;
   left: 35%;
 
+}
+
+.button {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  left: 35%;
 }
 
 .dashed {
@@ -77,5 +85,17 @@ h1 {
   position: relative;
   margin-left: 40%;
 }
+
+.well {
+  position: absolute;
+  display:block;
+  margin: 0 auto;
+
+}
+
+.jumbotron {
+  margin-top: 8%;
+}
+
 
 

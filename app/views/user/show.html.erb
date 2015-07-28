@@ -2,8 +2,10 @@
   <div class="row">
 
 <h1>User Show Results</h1>
-
-<%=  @tags  %>
-
+<div class="well">
+<% @tags.each do |item| %>
+  <%= image_tag item['images']['low_resolution']['url'] %>
+<% end %>
+</div>
   </div>
 </div>
