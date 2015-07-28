@@ -1,11 +1,28 @@
 Rails.application.routes.draw do
+  root :to => "home#index"
+
+  get 'oauth/connect' => 'home#connect'
+  get 'oauth/callback' => 'home#callback'
+
+  # get 'oauth/logout' => 'home#logout'
+  # get 'oauth/failure' => 'home#failure'
+
+  # get 'tags' => 'user#tags'
+
+  resources :user, except:[:show, :create]
+
+  get 'show' => 'user#show'
+  post 'show' => 'user#show'
+
+  resources :event
+
   # get 'main/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'main#index'
+  # root 'main#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
