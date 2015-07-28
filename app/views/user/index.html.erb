@@ -1,16 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="jumbotron">
-  <h1>Welcome, <%=  @username.username %> to your Events page!</h1>
+  <h1>Welcome, <%=  @username.username %>!</h1>
 
     </div>
 
 
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Add/Create an Event!
-</button>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -20,20 +16,29 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Add an Event</h4>
       </div>
-      <div class="modal-body">
-        <%=  @username.username %>
+      <div class="modal-body ">
+
+
 
           <%= bootstrap_form_tag url: show_path do |f| %>
           <%= f.text_field :q, label: "Search a hashtag below", placeholder: "example - Usher" %>
-          <%= f.primary "Search", :class => "float-right" %>
+          <%= f.primary "Search", :class => "btn btn-success" %>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         <% end %>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
-      </div>
     </div>
   </div>
+</div>
+
+<div class="dashed">
+  <h2>You have no events</h2>
+<div class="addbutton"
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-success btn-lg glyphicon glyphicon-plus" data-toggle="modal" data-target="#myModal">
+ Event
+</button>
+</div>
 </div>
 
 </div>

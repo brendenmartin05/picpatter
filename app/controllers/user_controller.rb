@@ -1,5 +1,6 @@
 class UserController < ApplicationController
   require 'rest-client'
+  require 'json'
 
   def new
 
@@ -15,13 +16,20 @@ class UserController < ApplicationController
 
  def show
   @query = params[:q]
-
   # render json: params
 
-  # if @query
-  #   response = RestClient.get 'https://api.instagram.com/v1/tags/{tag-name}?access_token=ACCESS-TOKEN', {:params => {:term => @query}}
-  #   render jason: params
-# end
+  if @query
+    # response = RestClient.get 'https://api.instagram.com/v1/tags/search', {:params => {:q => @query, :access_token =>ENV['ACCESS_TOKEN']}}
+
+    response = RestClient.get 'https://api.instagram.com/v1/tags/' + @query + '/media/recent?access_token=' + ENV['ACCESS_TOKEN']
+
+    # render json: response
+    @tags = JSON.parse(response)["data"]
+    # render @tags
+  end
+  # render jason: params
+ end
+
 
 
  # @search = Search.find(params[:id])
@@ -32,5 +40,5 @@ class UserController < ApplicationController
 
 
 end
-end
+
 

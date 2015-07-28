@@ -36,17 +36,46 @@ h1 {
 
 }
 
-.button {
+
+.icon img {
+  height:70px;
+  width: 70px;
+  margin-top: -23px;
+
+}
+
+.btn a {
+  color: white;
+}
+
+
+.addbutton {
   position: absolute;
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
   left: 35%;
 
 }
 
-/*.button a{
-  color: white;
+.dashed {
+  border: 5px dashed gray;
+  height: 40%;
+  width: 93%;
+  margin-top: 10px;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
 }
-*/
+
+.dashed h2 {
+  position: relative;
+  margin-left: 35%;
+  margin-top: 70px;
+}
+
+.dashed button {
+  position: relative;
+  margin-left: 40%;
+}
 
 
