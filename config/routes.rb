@@ -14,9 +14,9 @@ Rails.application.routes.draw do
   get 'show' => 'user#show'
   post 'show' => 'user#show'
 
-  resources :event
+  resources :events
 
-  get 'show' =>'event#show'
+  # get 'event' =>'event#show'
 
   # get 'main/index'
 

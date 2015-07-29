@@ -1,1 +1,28 @@
-<h1> Event show by Id </h1>
+
+<div class="container">
+  <div class="row">
+    <div class="jumbotron">
+      <h1 class="eventname">
+        <%= @event.name %>
+      </h1>
+      <h2 class="hashtag">
+        #<%= @event.hashtag %>
+      </h2>
+    </div>
+
+    <div class ="backbutton">
+    <button type="button" class="btn btn-success btn-md glyphicon glyphicon-arrow-left"> <%= link_to 'Back', user_index_path %></button>
+    </div>
+
+    <div class="well">
+     <% @tags.each do |t| %>
+     <%= image_tag t['images']['low_resolution']['url'] %>
+      <% end %>
+    </div>
+
+
+  </div>
+</div>
+
+
+

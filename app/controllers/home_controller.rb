@@ -29,9 +29,11 @@ def callback
 
  client = Instagram.client(:access_token => session[:access_token])
  username = client.user.username
- @profilepic = client.user.profile_picture
+ profile_picture = client.user.profile_picture
 
- user = User.find_or_create_by(username:username)
+
+
+ user = User.find_or_create_by(username:username,profile_picture:profile_picture)
 
  session[:user_id] = user.id
  #render json: user

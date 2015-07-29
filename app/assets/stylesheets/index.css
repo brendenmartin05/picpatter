@@ -5,14 +5,131 @@
   margin-top: -23px;
 }
 
+.logotitle {
+  position: fixed;
+  margin-left: 80px;
+  margin-top: -60px;
+
+}
+
 /*background image on home page*/
-.bgimg{
+#home {
+  background: url("http://www.jamesferrara.com/data/photos/3644_1destination_photography__55.jpg") 100% 0 repeat fixed; min-height: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+}
+/*How it Works section*/
+#about {
+  background: url("http://cdn.spafinder.com/iStock_000016396348Medium.jpg") 50% 0 no-repeat min-height: 700px;
+  height: 700px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+#about h1 {
+  height: 458px;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
+}
+/*Second wedding image*/
+#secondimage {
+  background: url("http://www.hdwallwide.com/wp-content/uploads/2014/05/planning-a-destination-wedding-paris.jpg") 100% 0 repeat fixed; min-height: 500px;
+  height: 500px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+
+}
+/*OUR TEAM SECTION*/
+#ourteam {
+   background: url("http://cdn.spafinder.com/iStock_000016396348Medium.jpg") 50% 0 no-repeat min-height: 700px;
+   height: 700px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+#ourteam h1 {
+  height: 458px;
+  position: absolute;
+  text-align: center;
+  top: 150px;
+  width: 100%;
+}
+.teampic{
+  height:150px;
+  width: 150px;
+  margin-left: 150px;
+  margin-top: 300px;
+
+}
+.teampic img {
+  border-radius: 150px;
+}
+
+#brenden {
+  margin-top: -115px;
+  margin-left: -100px;
+}
+
+#brendeninfo {
+  width: 400px;
+  margin-left: -100px;
+}
+
+
+/*HOW IT WORKS SECTION*/
+
+.col-md-4 {
+  margin-top: 200px;
+}
+
+.instagramicon {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  margin-left:70px;
+  margin-top: 20px;
+}
+
+
+
+
+/*FOOTER*/
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+.site-footer {
+  background: #1EB18A;
+}
+
+
+
+
+
+.panel {
+  margin: 40px;
+}
+/*.bgimg{
   background: url("http://aclhi.com/wp-content/uploads/2015/05/general-ideas-elegant-beach-wedding-locations-southern-california-opulent-beach-wedding-locations-gold-coast-wonderful-chic-and-nice-picture-of-beach-wedding-locations-palm-beach-wedding.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 
 /*white text inside mainbox*/
 .largetext {
@@ -88,13 +205,20 @@ h1 {
   position: absolute;
   display: block;
   margin: 0 auto;
-  width: 93%;
+  width: 92%;
 
+}
+
+.well img {
+  margin: 20px;
 }
 
 /*on user index page and user show results*/
 .jumbotron {
   margin-top: 8%;
+  background-color: white;
+  border: solid 2px black;
+  width: 100%;
 }
 
 .eventname a{
@@ -127,7 +251,11 @@ h1 {
 
 }
 
-
-
-
+.userprofile img{
+  border-radius: 150px;
+  float: left;
+  margin-top: -30px;
+  margin-left: -30px;
+  margin-right: 30px;
+}
 
