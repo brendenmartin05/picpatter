@@ -1,14 +1,20 @@
+/*navbar heart icon*/
+.icon img {
+  height:70px;
+  width: 70px;
+  margin-top: -23px;
+}
+
+/*background image on home page*/
 .bgimg{
   background: url("http://aclhi.com/wp-content/uploads/2015/05/general-ideas-elegant-beach-wedding-locations-southern-california-opulent-beach-wedding-locations-gold-coast-wonderful-chic-and-nice-picture-of-beach-wedding-locations-palm-beach-wedding.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 
-
-
+/*white text inside mainbox*/
 .largetext {
   font-family: 'Poiret One', cursive;
   color:white;
@@ -23,6 +29,7 @@ h1 {
   font-family: 'Poiret One', cursive;
 }
 
+/*index page main CTA background gray box*/
 .mainbox {
   background-color: black;
   height:300px;
@@ -36,66 +43,91 @@ h1 {
 
 }
 
-
-.icon img {
-  height:70px;
-  width: 70px;
-  margin-top: -23px;
-
-}
-
+/*connect with instagram link button on front page white text only*/
 .btn a {
   color: white;
 
 }
 
-
-.addbutton {
-  position: absolute;
-  display: block;
-  margin: 0 auto;
-  left: 35%;
-
-}
-
+/*connect with instagram link button, not the white text*/
 .button {
   position: absolute;
   display: block;
   margin: 0 auto;
-  left: 35%;
+  left: 40%;
 }
+/*----------------------------------*/
 
-.dashed {
-  border: 5px dashed gray;
-  height: 40%;
-  width: 93%;
-  margin-top: 10px;
+/*add event button on user index page*/
+.addbutton {
   position: absolute;
   display: block;
   margin: 0 auto;
+  left: 90%;
+  margin-top: -65px;
+  color:#E23242;
+
 }
 
-.dashed h2 {
+
+/*.dashed h2 {
   position: relative;
   margin-left: 35%;
   margin-top: 70px;
-}
+}*/
 
-.dashed button {
+/*.dashed button {
   position: relative;
   margin-left: 40%;
-}
+}*/
 
+
+/*----------------------------------*/
+/*instagram results appear in one main well*/
 .well {
   position: absolute;
-  display:block;
+  display: block;
   margin: 0 auto;
+  width: 93%;
 
 }
 
+/*on user index page and user show results*/
 .jumbotron {
   margin-top: 8%;
 }
+
+.eventname a{
+  color: white;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+
+.hashtagevent  {
+  color: white;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.hashtagevent a {
+  color: white;
+}
+
+.eventboard {
+  background-color: #1EB18A;
+  width: 25%;
+  height: 200px;
+  margin: 40px;
+  border-radius: 8px;
+
+}
+
+
 
 
 
