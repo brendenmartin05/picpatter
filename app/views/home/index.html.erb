@@ -7,10 +7,11 @@
   <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="//code.jquery.com/jquery.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
- <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
  <link rel="shortcut icon" href="assets/favicon.ico" />
 </head>
 
@@ -24,7 +25,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand icon" href="http://localhost:3000"><img src="/assets/picpatter.png"><h1 class="logotitle">PicPatter</h1></a>
+      <div class="icon"><%= image_tag ("picpatter.png") %>
+        <h1 class="logotitle">PicPatter</h1>
+      </div>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
