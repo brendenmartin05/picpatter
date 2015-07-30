@@ -35,6 +35,8 @@ gem 'json'
 
 gem 'bootstrap_form'
 
+gem 'social-share-button'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

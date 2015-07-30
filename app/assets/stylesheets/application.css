@@ -11,5 +11,52 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require social-share-button
  *= require_self
  */
+
+/*.social-share-button {
+
+  display: inline-block;
+  position: fixed;
+
+}*/
+
+ .social-share-button-facebook {
+
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 150px;
+  background: url("/assets/facebook.png") no-repeat;
+  z-index: 100
+
+
+ }
+
+ .social-share-button-pinterest {
+
+
+  width: 16px;
+  height: 16px;
+  border-radius: 150px;
+
+
+ }
+ .social-share-button-twitter {
+
+
+  width: 16px;
+  height: 16px;
+  border-radius: 150px;
+
+
+ }
+ .social-share-button-google_plus {
+
+  width: 16px;
+  height: 16px;
+  border-radius: 150px;
+
+
+ }
