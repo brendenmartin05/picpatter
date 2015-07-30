@@ -4,10 +4,6 @@ Rails.application.routes.draw do
   get 'oauth/connect' => 'home#connect'
   get 'oauth/callback' => 'home#callback'
 
-  # get 'oauth/logout' => 'home#logout'
-  # get 'oauth/failure' => 'home#failure'
-
-  # get 'tags' => 'user#tags'
 
   resources :user, except:[:show, :create]
 
