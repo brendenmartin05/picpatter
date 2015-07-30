@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Migration
   def change
-    add_column :events, :user_id, :intger
+    add_column :events, :user_id, :integer
   end
 end
