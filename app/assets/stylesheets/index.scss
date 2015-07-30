@@ -286,7 +286,9 @@ h1 {
 }
 
 .right {
-  float: right;
+  position: absolute;
+  display: inline-block;
+  margin-left: 30%;
   margin-right: 20px;
   margin-top: 10px;
 }
