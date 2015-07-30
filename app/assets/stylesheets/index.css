@@ -86,12 +86,22 @@
 }
 
 #brendeninfo {
-  width: 400px;
+  width: 70%;
   margin-left: -100px;
 }
 
 
-/*HOW IT WORKS SECTION*/
+/*CONTACT SECTION*/
+#contactimage {
+  background: url("http://www.woodlandsdancelessons.com/uploads/pages/page_52/Wedding_Dance.jpg") 100% 0 repeat fixed; min-height: 500px;
+  height: 500px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+
+}
+
 
 .col-md-4 {
   margin-top: 200px;
@@ -259,4 +269,28 @@ h1 {
   margin-right: 30px;
 }
 
+#socialicons {
+  margin-left: 60%;
+}
 
+.glyphicon-remove-sign {
+
+  float:right;
+  margin-top: -100px;
+  color: red;
+}
+
+.center {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.right {
+  float: right;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+#question {
+  color: white;
+}

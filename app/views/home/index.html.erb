@@ -19,7 +19,7 @@
     <div class="col-md-4">
       <div class="panel panel-primary">
        <div class="panel-heading">
-         <h2 class="panel-title">Login and Register with Instagram</h2>
+         <h2 class="panel-title">1. Login and Register with Instagram</h2>
     </div>
       <div class="panel-body">
       <img src="assets/instagramicon.png" class="instagramicon">
@@ -43,7 +43,7 @@
 <div class="col-md-4">
   <div class="panel panel-success">
     <div class="panel-heading">
-      <h3 class="panel-title">Start Adding Events</h3>
+      <h3 class="panel-title">2. Start Adding Events</h3>
     </div>
     <div class="panel-body">
     <img src="assets/event.png" class="instagramicon">
@@ -67,7 +67,7 @@
 <div class="col-md-4">
   <div class="panel panel-info">
   <div class="panel-heading">
-    <h3 class="panel-title">View and Share with friends!</h3>
+    <h3 class="panel-title">3. View and Share with friends!</h3>
   </div>
   <div class="panel-body">
     <img src="assets/share.png" class="instagramicon">
@@ -92,8 +92,13 @@
   </section>
 
   <section id="secondimage" data-type="background" data-speed="10" class="pages">
-         <article></article>
-    </section>
+         <article>
+         <div class="row col-md-6 center">
+           <h1>"Now I can see all the wedding photos from my big day in one place! It's like a 360 degree view of my wedding"
+           -Charlotte Horn</h1>
+         </div>
+         </article>
+  </section>
 
 
   <section id="ourteam" data-type="background" data-speed="10" class="pages">
@@ -104,19 +109,26 @@
         </div>
         <div class="teaminfo col-md-8 col-md-offset-6">
           <h3 id="brenden">Brenden Martin</h3>
-            <p id="brendeninfo"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p id="brendeninfo"> Brenden came up with the idea of PicPatter while in an immersive web development bootcamp at General Assembly. Understanding the struggle of wanting to get all the wedding photos of friends and family on your special day, he found a way to harness the Instagram API to pull in the photos giving you a story of your wedding day that you can reference at anytime. Brenden plans on making additional upgrades to the application and will be testing it this wedding season!</p>
         </div>
 
       </div>
   </section>
 
-<footer class="site-footer">
-  <%= social_share_button_tag ("PicPatter") %>
+  <section id="contactimage" data-type="background" data-speed="10" class="pages">
+         <article>
+          <div class="row col-md-6 center">
+           <h1 id="question">Question? Well, shoot us a call!</h1>
+         </div>
+         </article>
+  </section>
+
+
+<footer class="site-footer col-md-12">
+  <div class="row">
+    <%= social_share_button_tag ("PicPatter") %>
+    <p class="right">Created by Brenden Martin Consulting. All rights reserved. Copyright 2015</p>
+  </div>
 </footer>
 
 

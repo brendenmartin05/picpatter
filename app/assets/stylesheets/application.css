@@ -22,41 +22,42 @@
 
 }*/
 
+.social-share-button {
+
+    margin-left: 45%;
+    padding-top: 40px;
+
+}
+
  .social-share-button-facebook {
 
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 50px;
+  height: 50px;
   border-radius: 150px;
-  /*background: url("/assets/facebook.png") no-repeat;
-  z-index: 100*/
-
-
+  background: url("/assets/facebook.png") no-repeat;
+  border: 2px solid white;
  }
 
  .social-share-button-pinterest {
 
 
-  width: 16px;
-  height: 16px;
+  width: 50px;
+  height: 50px;
+  background: url("/assets/pinterest.png") no-repeat;
   border-radius: 150px;
+  background-color:white;
 
 
  }
  .social-share-button-twitter {
 
 
-  width: 16px;
-  height: 16px;
+  width: 50px;
+  height: 50px;
+  background: url("/assets/twitter.png") no-repeat;
   border-radius: 150px;
-
-
- }
- .social-share-button-google_plus {
-
-  width: 16px;
-  height: 16px;
-  border-radius: 150px;
+  background-color: white;
 
 
  }
