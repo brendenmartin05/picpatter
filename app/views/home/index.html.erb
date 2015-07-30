@@ -1,4 +1,62 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PicPatter</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+ <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+ <link rel="shortcut icon" href="assets/favicon.ico" />
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand icon" href="http://localhost:3000"><img src="/assets/picpatter.png"><h1 class="logotitle">PicPatter</h1></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav pull-right">
+        <li class=""><a href="#about">How it Works <span class="sr-only">(current)</span></a></li>
+        <li><a href="#ourteam">Our Team</a></li>
+        <li><a href="#contactimage">Contact</a></li>
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul> -->
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li><a href="#">Link</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<%= yield %>
+
+</body>
+</html>
 
 <section id="home" data-type="background" data-speed="10" class="pages">
   <article>I am absolute positioned</article>
@@ -119,6 +177,7 @@
          <article>
           <div class="row col-md-6 center">
            <h1 id="question">Question? Well, shoot us a call!</h1>
+
          </div>
          </article>
   </section>

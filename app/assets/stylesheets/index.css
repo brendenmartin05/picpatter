@@ -277,7 +277,7 @@ h1 {
 
   float:right;
   margin-top: -100px;
-  color: red;
+  color: #F57985;
 }
 
 .center {
@@ -293,4 +293,8 @@ h1 {
 
 #question {
   color: white;
+}
+
+.contactform {
+  margin-top: 100px;
 }
