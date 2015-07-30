@@ -7,6 +7,7 @@ require 'json'
 
 
 
+# CALLBACK_URL = "http://localhost:3000/oauth/callback"
 CALLBACK_URL = "http://picpatter.herokuapp.com/oauth/callback"
 
 def connect

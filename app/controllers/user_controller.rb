@@ -28,7 +28,7 @@ def show
   # p @event_name
 
   if @query
-    response = RestClient.get 'https://api.instagram.com/v1/tags/' + @query + '/media/recent?access_token=' + ENV['ACCESS_TOKEN']
+    response = RestClient.get 'https://api.instagram.com/v1/tags/' + @query + '/media/recent?access_token=' + session[:access_token]
     @tags = JSON.parse(response)["data"]
 
 
