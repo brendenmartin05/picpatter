@@ -26,12 +26,11 @@ def create
 end
 
 def destroy
-    result = Event.destroy params[:id]
-    # redirect_to :tasks
-    respond_to do |format|
-      format.html {redirect_to :user}
-      format.json {render json: result}
-    end
+
+    @event = Event.find(params[:id])
+    @event.destroy
+    redirect_to(user_index_path)
+
   end
 
 

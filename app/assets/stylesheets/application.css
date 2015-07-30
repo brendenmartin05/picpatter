@@ -25,11 +25,11 @@
  .social-share-button-facebook {
 
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 16px;
+  height: 16px;
   border-radius: 150px;
-  background: url("/assets/facebook.png") no-repeat;
-  z-index: 100
+  /*background: url("/assets/facebook.png") no-repeat;
+  z-index: 100*/
 
 
  }
