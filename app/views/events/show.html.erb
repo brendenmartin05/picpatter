@@ -19,7 +19,7 @@
     </div>
 
     <div class="well">
-
+    <div id="socialicons"> <%= social_share_button_tag ("PicPatter") %></div>
      <% @tags.each do |t| %>
      <%= image_tag t['images']['low_resolution']['url'] %>
       <% end %>

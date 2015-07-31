@@ -13,7 +13,7 @@ def show
 
  query = @event.hashtag
 
- response = RestClient.get 'https://api.instagram.com/v1/tags/' + query + '/media/recent?access_token=' + ENV['ACCESS_TOKEN']
+ response = RestClient.get 'https://api.instagram.com/v1/tags/' + query + '/media/recent?access_token=' + session[:user_id]
     @tags = JSON.parse(response)["data"]
 
 
