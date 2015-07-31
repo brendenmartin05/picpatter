@@ -25,13 +25,13 @@
 }
 
  .social-share-button-facebook {
-  background: url("http://4.bp.blogspot.com/-_9nTze_WfiU/Ukj1g5u6DvI/AAAAAAAAAYY/wgRcbRsjw28/s1600/facebook_50x50.gif") no-repeat;
+
   display: inline-block;
   width: 50px;
   height: 50px;
   border-radius: 150px;
-
-  /*border: 2px solid white;*/
+  background: url("/assets/facebook.png") no-repeat;
+  border: 2px solid white;
  }
 
  .social-share-button-pinterest {
@@ -39,9 +39,9 @@
 
   width: 50px;
   height: 50px;
-  background: url("http://www.haydtodo.com/wp-content/uploads/Pinterest_a.png") no-repeat;
+  background: url("/assets/pinterest.png") no-repeat;
   border-radius: 150px;
-  /*background-color:white;*/
+  background-color:white;
 
 
  }
@@ -50,9 +50,9 @@
 
   width: 50px;
   height: 50px;
-  background: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQcfPccfKE3u_6l6OwKlXs20PKvfqSJSROHMMUBJqEOxX4Pz4p0Fw") no-repeat;
+  background: url("/assets/twitter.png") no-repeat;
   border-radius: 150px;
-  /*background-color: white;*/
+  background-color: white;
 
 
  }
