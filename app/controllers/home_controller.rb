@@ -6,7 +6,7 @@ require 'rest-client'
 require 'json'
 
 
-
+# testing callbackurl
 # CALLBACK_URL = "http://localhost:3000/oauth/callback"
 CALLBACK_URL = "http://picpatter.herokuapp.com/oauth/callback"
 
